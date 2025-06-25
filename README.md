@@ -16,7 +16,7 @@ This experience was developed as part of research work at The Julius Maximilians
 
 ## 🧪 Test Setup
 We used:
-- A 1x1 meter aluminum frame with 3 GNSS receivers to simulate mounting on an excavator.
+- A 1x1 meter aluminum frame with 3 GNSS receivers( u-blox ZED F9P GNSS receiver) to simulate mounting on an excavator.
 - A Raspberry Pi for data processing.
 - RTK testing was also conducted using a bicycle-mounted GNSS system across campus, referencing a fixed base station.
 
