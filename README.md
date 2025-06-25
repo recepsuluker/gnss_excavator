@@ -28,9 +28,11 @@ We used:
 - IMU sensor fusion for full 6-DoF orientation tracking.
 - Visual SLAM integration in GPS-denied environments.
 
-## 📷 Image
-![Test Setup](images/test_frame.png)
+## 📷 Test Setup Image
 
+To validate the localization pipeline before deploying it on the actual excavator, we used a 1x1 meter aluminum frame with three GNSS receivers mounted at its corners. This allowed us to simulate the GNSS antenna positions and verify the 6-DoF pose estimation.
+
+![Test Setup](images/1x1_frame.png)
 ---
 
 Developed with ❤️ during a research assistantship in Würzburg, Germany.
