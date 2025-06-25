@@ -1,0 +1,11 @@
+[Unit]
+Description=GNSS ant0 service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=bash -c "mkdir -p /tmp/rtkrcv_ant0 && cd /tmp/rtkrcv_ant0 && rtkrcv -s -p 9411 -w \"\" -o /usr/local/etc/rtkrcv_ant0.conf"
+
+[Install]
+WantedBy=multi-user.target

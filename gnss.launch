@@ -1,0 +1,22 @@
+<launch>
+  <group ns="ant0">
+    <node name="nmea_tcp_driver_node" pkg="nmea_tcp_driver" type="nmea_tcp_driver" output="screen" respawn="true">
+      <param name="port" value="9401"/>
+      <param name="host" value="localhost" />
+    </node>
+  </group>
+
+  <group ns="ant1">
+    <node name="nmea_tcp_driver_node" pkg="nmea_tcp_driver" type="nmea_tcp_driver" output="screen" respawn="true">
+      <param name="port" value="9402"/>
+      <param name="host" value="localhost" />
+    </node>
+  </group>
+
+  <group ns="ant2">
+    <node name="nmea_tcp_driver_node" pkg="nmea_tcp_driver" type="nmea_tcp_driver" output="screen" respawn="true">
+      <param name="port" value="9403"/>
+      <param name="host" value="localhost" />
+    </node>
+  </group>
+</launch>

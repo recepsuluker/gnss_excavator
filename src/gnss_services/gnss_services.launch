@@ -1,0 +1,11 @@
+<launch>
+    <!-- Launch gnss-ant0.service -->
+    <node name="gnss_ant0_service" pkg="systemd_ros" type="systemd_ros" args="/home/bagger/gnss/gnss-ant0.service" output="screen" />
+
+    <!-- Launch gnss-ant1.service -->
+    <node name="gnss_ant1_service" pkg="systemd_ros" type="systemd_ros" args="/home/bagger/gnss/gnss-ant1.service" output="screen" />
+
+    <!-- Launch gnss-ant2.service -->
+    <node name="gnss_ant2_service" pkg="systemd_ros" type="systemd_ros" args="/home/bagger/gnss/gnss-ant2.service" output="screen" />
+</launch>
+

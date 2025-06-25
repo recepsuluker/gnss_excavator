@@ -1,0 +1,9 @@
+<launch>
+    <node name="receiver1_publisher" pkg="receiver1_pkg" type="Publisher.py" output="screen" />
+    <node name="receiver1_subscriber" pkg="receiver1_pkg" type="Subscriber.py" output="screen" />
+    <node name="receiver2_publisher" pkg="receiver2_pkg" type="Publisher.py" output="screen" />
+    <node name="receiver2_subscriber" pkg="receiver2_pkg" type="Subscriber.py" output="screen" />
+    <node name="receiver3_publisher" pkg="receiver3_pkg" type="Publisher.py" output="screen" />
+    <node name="receiver3_subscriber" pkg="receiver3_pkg" type="Subscriber.py" output="screen" />
+    <node name="combined_node" pkg="combined_pkg" type="combined_node.py" output="screen" />
+</launch>

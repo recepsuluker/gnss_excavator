@@ -1,0 +1,2 @@
+combine_pkg:nmea_tcp_driver:receiver1_pkg:receiver2_pkg:receiver3_pkg
+-DCATKIN_DEVEL_PREFIX=/home/bagger/gnss/devel -DCMAKE_INSTALL_PREFIX=/home/bagger/gnss/install -G Unix Makefiles

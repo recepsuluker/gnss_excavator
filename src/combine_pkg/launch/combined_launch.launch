@@ -1,0 +1,27 @@
+<launch>
+    <!-- Launch receiver1_pkg nodes -->
+    <node pkg="receiver1_pkg" type="Publisher.py" name="receiver1_publisher" output="screen"/>
+    <node pkg="receiver1_pkg" type="Subscriber.py" name="receiver1_subscriber" output="screen"/>
+
+    <!-- Launch receiver2_pkg nodes -->
+    <node pkg="receiver2_pkg" type="Publisher.py" name="receiver2_publisher" output="screen"/>
+    <node pkg="receiver2_pkg" type="Subscriber.py" name="receiver2_subscriber" output="screen"/>
+
+    <!-- Launch receiver3_pkg nodes -->
+    <node pkg="receiver3_pkg" type="Publisher.py" name="receiver3_publisher" output="screen"/>
+    <node pkg="receiver3_pkg" type="Subscriber.py" name="receiver3_subscriber" output="screen"/>
+
+    <!-- Launch combined_pkg node -->
+    <node pkg="combine_pkg" type="combined_node.py" name="combine_node" output="screen">
+        <param name="rtkrcv_ant0_conf" value="/dev/ttyACM0"/>
+        <param name="rtkrcv_ant0_costume" value="Receiver_0"/>
+        <param name="rtkrcv_ant1_conf" value="/dev/ttyACM1"/>
+        <param name="rtkrcv_ant1_costume" value="Receiver_1"/>
+        <param name="rtkrcv_ant2_conf" value="/dev/ttyACM2"/>
+        <param name="rtkrcv_ant2_costume" value="Receiver_2"/>
+        <param name="pathToDevice" value="/home/gnss/src/build/devel"/>
+        
+        <!-- <param name="gnssTopic" value="gnss_topic_name"/> -->
+    </node>
+</launch>
+

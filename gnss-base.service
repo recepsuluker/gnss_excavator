@@ -1,0 +1,11 @@
+[Unit]
+Description=GNSS base service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=str2str -in ntrip://caster.centipede.fr:2101/JMU-ROBOTICS -out tcpsvr://:9400
+
+[Install]
+WantedBy=multi-user.target
