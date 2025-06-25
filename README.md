@@ -1,6 +1,6 @@
 # Localization of Excavator using GNSS & RTK
 
-This project was developed as part of research work at The Julius Maximilians University of Würzburg. It focuses on estimating the 6-DoF pose of an excavator using multi-GNSS receivers and RTK corrections, integrated with a Raspberry Pi and ROS.
+This experience was developed as part of research work at The Julius Maximilians University of Würzburg. It focuses on estimating the 6-DoF pose of an excavator using multi-GNSS receivers and RTK corrections, integrated with a Raspberry Pi and ROS.
 
 ## 🚀 Project Overview
 - High-precision real-time localization using GNSS with RTK.
