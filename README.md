@@ -33,8 +33,8 @@ We used:
 To validate the localization pipeline before deploying it on the actual excavator, we used a 1x1 meter aluminum frame with three GNSS receivers mounted at its corners. This allowed us to simulate the GNSS antenna positions and verify the 6-DoF pose estimation.
 
 
-![1x1 frame]1x1 frame.png
-
+1x1 frame.png check it out!
+ 
 ---
 
 Developed with ❤️ during a research assistantship in Würzburg, Germany.
